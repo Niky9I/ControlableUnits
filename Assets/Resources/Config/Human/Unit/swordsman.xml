@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UnitConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Hp>600</Hp>
+	<Attack>
+		<MinAttack>49</MinAttack>
+		<MaxAttack>54</MaxAttack>
+		<AttackSpeed>1</AttackSpeed>
+		<AttackDistance>
+			<MinDistance>1</MinDistance>
+			<MaxDistance>1</MaxDistance>
+		</AttackDistance>
+	</Attack>
+	<Defense>15</Defense>
+	<Build>
+		<BuildTime>2</BuildTime>
+	</Build>
+	<Speed>0.5</Speed>
+	<Cost>220</Cost>
+	<PrefabPath>/Human/Unit/Swordsman</PrefabPath>
+</UnitConfig>

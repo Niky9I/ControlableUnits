@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BuildingConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Strength>5000</Strength>
+	<ResProd>
+		<Interval>4</Interval>
+		<Amount>300</Amount>
+	</ResProd>
+	<Cost>0</Cost>
+	<PrefabPath>/Human/Building/Castle</PrefabPath>
+</BuildingConfig>

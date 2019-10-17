@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<!-- simple elements -->
+	<xs:element name="Hp" type="xs:float"/>
+	<xs:element name="MinAttack" type="xs:float"/>
+	<xs:element name="MaxAttack" type="xs:float"/>
+	<xs:element name="AttackSpeed" type="xs:float"/>
+	<xs:element name="MinDistance" type="xs:float"/>
+	<xs:element name="MaxDistance" type="xs:float"/>
+	<xs:element name="Defense" type="xs:float"/>
+	<xs:element name="BuildTime" type="xs:float"/>
+	<xs:element name="Speed" type="xs:float"/>
+	<xs:element name="Cost" type="xs:float"/>
+	<xs:element name="PrefabPath" type="xs:string"/>
+	
+	<!-- complex elements -->
+	<xs:element name="AttackDistance">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="MinDistance"/>
+				<xs:element ref="MaxDistance"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="Attack">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="MinAttack"/>
+				<xs:element ref="MaxAttack"/>
+				<xs:element ref="AttackSpeed"/>
+				<xs:element ref="AttackDistance"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="Build">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="BuildTime"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="UnitConfig">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="Hp"/>
+				<xs:element ref="Attack"/>
+				<xs:element ref="Defense"/>
+				<xs:element ref="Build"/>
+				<xs:element ref="Speed"/>
+				<xs:element ref="Cost"/>
+				<xs:element ref="PrefabPath"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

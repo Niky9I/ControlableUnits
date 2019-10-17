@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resource_path>
+	<resource type="Config">Config</resource>
+	<resource type="Model">Model</resource>
+	<resource type="Scene">Scene</resource>
+  <resource type="Prefab">Prefab</resource>
+</resource_path>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<!-- simple elements -->
+	<xs:element name="Strength" type="xs:float"/>
+	<xs:element name="Interval" type="xs:float"/>
+	<xs:element name="Amount" type="xs:float"/>
+	<xs:element name="Cost" type="xs:float"/>
+	<xs:element name="PrefabPath" type="xs:string"/>
+	
+	<!-- complex elements -->
+	<xs:element name="ResProd">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="Interval"/>
+				<xs:element ref="Amount"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="BuildingConfig">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="Strength"/>
+				<xs:element ref="ResProd"/>
+				<xs:element ref="Cost"/>
+				<xs:element ref="PrefabPath"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,6 @@
+﻿
+interface ISelectable
+{
+    void Select();
+
+}
